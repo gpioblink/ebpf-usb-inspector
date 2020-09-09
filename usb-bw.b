@@ -22,5 +22,5 @@ kprobe:__usb_hcd_giveback_urb {
        $dev->descriptor.idProduct,
        $urb->transfer_buffer_length,
        str($dev->product),
-       str($dev->manufacturer)] = str($urb->transfer_buffer);
+       str($dev->manufacturer)] = str($urb->transfer_buffer, $urb->transfer_buffer_length + 1);
 }
