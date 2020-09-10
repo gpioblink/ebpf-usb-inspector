@@ -4,7 +4,6 @@ from hexdump import hexdump
 
 code = """
 #include <linux/usb.h>
-
 struct data_t {
   u64 alen;
   u64 buflen;
@@ -14,7 +13,6 @@ struct data_t {
   unsigned char buf[256];
 };                
 BPF_PERF_OUTPUT(events);
-
 int kprobe____usb_hcd_giveback_urb(struct pt_regs *ctx, struct urb *urb) {
   struct data_t data = {};
   struct usb_device *dev = urb->dev;
