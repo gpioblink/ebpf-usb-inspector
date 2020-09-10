@@ -51,6 +51,7 @@ def asciichar(keynum):
         char = chr(keynum + 61)
 
     # TODO: ここ見ながらキーコード追加！
+    # https://www.win.tue.nl/~aeb/linux/kbd/scancodes-14.html
     altchars = {
         chr(0): '',
         chr(40): 'ENTER',
