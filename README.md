@@ -4,7 +4,7 @@ This is a tool for USB ManInTheMiddle using eBPF.
 
 eBPFを使って、USBのManInTheMiddleをするためのツールです。
 
-## 使用方法
+## How to Use 使用方法
 
 Please execute `$sudo python3 bccusb.py`.
 
@@ -16,7 +16,7 @@ Before your execusion, please open the source code and change vendorId to your k
 
 中身開いて、`# change this id to your USB device`の部分のvendorIdを取得したいUSBデバイスのものに変えてお使いください。
 
-## 使用方法(キーボード用)
+## How to Use (For Keyboard HID) 使用方法(キーボード用)
 
 For the keyboard, we also created a tool that displays the value of keys pressed.
 
